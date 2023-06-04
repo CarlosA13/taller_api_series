@@ -13,7 +13,7 @@ const SeriesMarvel = () => {
   
     const fetchSeries = async () => {
       const apiKey = 'e51e499cba2aac51bd9d088e0a2df483';
-      const offset = Paginaact * 10; // Multiplica por el límite para obtener el offset correcto
+      const offset = Paginaact * 20; // Multiplica por el límite para obtener el offset correcto
       const response = await fetch(
         `https://gateway.marvel.com/v1/public/series?ts=1&apikey=${apiKey}&hash=37c9ef894f960b6103830696d80b66cd&limit=10&offset=${offset}`
       );
