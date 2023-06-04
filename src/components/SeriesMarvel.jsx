@@ -41,7 +41,14 @@ const SeriesMarvel = () => {
       };
 
   return (
-    <div>SeriesMarvel</div>
+    <div>
+      <h1>Series de Marvel</h1>
+      <h2>PD: Algunas imágenes no funcionan</h2>
+      <div>
+        <button onClick={handleLoadSeries}>Cargar Series</button>
+        <button onClick={handlePreviousPage}>Anterior</button>
+        <button onClick={handleNextPage}>Siguiente</button>
+      </div>
   )
 }
 
