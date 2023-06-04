@@ -49,6 +49,18 @@ const SeriesMarvel = () => {
         <button onClick={handlePreviousPage}>Anterior</button>
         <button onClick={handleNextPage}>Siguiente</button>
       </div>
+      <ul>
+        {series.map((serie) => (
+          <li key={serie.id}>
+            <h3>{serie.title}</h3>
+            <img
+              src={`${serie.thumbnail.path}/standard_fantastic.${serie.thumbnail.extension}`}
+              alt={serie.title}
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 
