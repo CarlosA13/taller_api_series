@@ -23,6 +23,23 @@ const SeriesMarvel = () => {
       console.log(data)
     };
 
+    const handleLoadSeries = () => {
+        setPaginaact(0); // Reinicia la página al cargar nuevas series
+        setCargando(true);
+      };
+    
+      const handlePreviousPage = () => {
+        if (Paginaact > 0) {
+          setPaginaact(Paginaact - 1);
+          setCargando(true);
+        }
+      };
+    
+      const handleNextPage = () => {
+        setPaginaact(Paginaact + 1);
+        setCargando(true);
+      };
+
   return (
     <div>SeriesMarvel</div>
   )
